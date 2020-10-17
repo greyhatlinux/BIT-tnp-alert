@@ -39,6 +39,8 @@ if __name__ == "__main__":
     with open('source.txt' , 'r') as f:
         data = f.read()
 
+    os.remove('source.txt')
+    
     soup = bs4.BeautifulSoup(data, 'html.parser')
 
     raw = set(soup.select('#divAnnouncement_d'))
@@ -51,7 +53,16 @@ if __name__ == "__main__":
       prev = prev_all.split('\n')
       for i in new_all:
         if ( i not in prev_all):
-          print(i)
-          f.write(i)
+            f.write(i)
+            with open('new-update.txt', 'a+') as recent:
+                recent.write(i)
+
+
+
+    with open('new-update.txt', 'r') as recent:
+        if(recent.read()):
+            print(recent.read())
+            print("mailing")
+    print("Thank you!")
 
 
