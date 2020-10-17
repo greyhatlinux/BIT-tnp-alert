@@ -44,6 +44,14 @@ if __name__ == "__main__":
     raw = set(soup.select('#divAnnouncement_d'))
     for i in raw:
         ann = i.text
-        print(ann)
+    new_all = ann.split('\xa0')
+    
+    with open('announcement.txt' , 'r+') as f:
+      prev_all = f.read()
+      prev = prev_all.split('\n')
+      for i in new_all:
+        if ( i not in prev_all):
+          print(i)
+          f.write(i)
 
 
