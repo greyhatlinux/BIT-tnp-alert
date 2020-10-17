@@ -7,12 +7,12 @@ sudo apt-get update
 
 clear 
 echo -e "System Upgrade!"
-sudo apt-get upgrade -y
+sudo apt-get upgrade -y > /dev/null/ 2>&1
 
 clear
 echo -e "Downloading files"
-sudo apt install python3 -y
-sudo apt install python3-pip -y 
+sudo apt install python3 -y > /dev/null/ 2>&1
+sudo apt install python3-pip -y > /dev/null/ 2>&1
 
 echo -e "Files are huge...it might take few minutes. Sit back and relax!" 
 
