@@ -20,7 +20,7 @@ echo -e "Files are huge...it might take few minutes. Sit back and relax!"
 wget https://github.com/mozilla/geckodriver/releases/download/v0.27.0/geckodriver-v0.27.0-linux32.tar.gz > /dev/null/ 2>&1
 tar -xf geckodriver-v0.27.0-linux32.tar.gz > /dev/null/ 2>&1
 mv geckodriver /usr/bin/
-rm -r geckodriver-v0.27.0-linux32.tar.gz
+rm -r geckodriver-v0.27.0-linux32.tar.gz /dev/null/ 2>&1
 sudo pip3 install selenium -y
 
 pip3 install -r requirements.txt > /dev/null/ 2>&1
