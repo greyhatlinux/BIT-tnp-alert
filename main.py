@@ -1,4 +1,5 @@
 import os
+import sys
 import bs4                        
 import requests
 
@@ -9,8 +10,8 @@ pwd = os.getcwd() + "/mods"
 sys.path.insert(0, pwd)
 
 from mods import notify
-from mode import logging
-from mode import updates
+from mods import logging
+from mods import updates
 
 if __name__ == "__main__":
 
@@ -19,10 +20,10 @@ if __name__ == "__main__":
     logging.log_in()
 
     check_updates()
-    
+
     print("Emailing the new updates, if any")
     notify.email()
-    with open('new-update.txt', 'w') as file:
+    with open('new-update.txt', 'w') as file: pass
     print("Done!")
 
 

@@ -23,6 +23,7 @@ tar -xf "geckodriver-v0.27.0-linux32.tar.gz"
 mv ./geckodriver /usr/bin/
 rm  geckodriver-v0.27.0-linux32.tar.gz
 sudo pip3 install selenium -y
+sudo apt install git -y 
 
 sudo pip3 install -r requirements.txt 
 
