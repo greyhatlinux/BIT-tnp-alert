@@ -24,7 +24,7 @@ def log_in():
     driver.find_element_by_id("imgSubmit").click()
     print("Loggged in!")
 
-    print("Gettig updates...")
+    print("Getting updates...")
 
     res = requests.get("http://placement.bitmesra.ac.in/Student/StudentLanding.aspx")
 
@@ -36,5 +36,5 @@ def log_in():
         f.write(driver.page_source)
 
     print("Collected T&P updates!")
-    print("Loggig out.")
+    print("Logging out.")
     driver.quit()

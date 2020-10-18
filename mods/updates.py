@@ -1,9 +1,9 @@
 import os
 import bs4
 
-def check_update():
+def check_updates():
     with open('source.txt' , 'r') as f:
-    data = f.read()
+        data = f.read()
 
     os.remove('source.txt')
     
@@ -15,10 +15,10 @@ def check_update():
     new_all = ann.split('\xa0')
     
     with open('announcement.txt' , 'r+') as f:
-      prev_all = f.read()
-      prev = prev_all.split('\n')
-      for i in new_all:
-        if ( i not in prev_all):
-            f.write(i + "\n")
-            with open('new-update.txt', 'a+') as recent:
-                recent.write(i + "\n")
+        prev_all = f.read()
+        prev = prev_all.split('\n')
+        for i in new_all:
+            if ( i not in prev_all):
+                f.write(i + "\n")
+                with open('new-update.txt', 'a+') as recent:
+                    recent.write(i + "\n")

@@ -19,11 +19,12 @@ if __name__ == "__main__":
 
     logging.log_in()
 
-    check_updates()
+    updates.check_updates()
 
     print("Emailing the new updates, if any")
     notify.email()
     with open('new-update.txt', 'w') as file: pass
     print("Done!")
+    print("We'll scan in next 10 minutes!")
 
 
