@@ -28,12 +28,17 @@ def log_in():
 
     res = requests.get("http://placement.bitmesra.ac.in/Student/StudentLanding.aspx")
 
-    soup = bs4.BeautifulSoup(res.text, 'html.parser')
-
-    driver.get('http://placement.bitmesra.ac.in/Student/StudentLanding.aspx')
-
+    # for notification data extraction
+    driver.get('http://placement.bitmesra.ac.in/Student/StudentAnnouncement.aspx')
     with open ("source.txt", 'w') as f:   
         f.write(driver.page_source)
+
+    
+    # for jobs data extraction
+    driver.get("http://placement.bitmesra.ac.in/Student/Jobs.aspx")
+    with open ("job-source.txt", 'w') as f:   
+        f.write(driver.page_source)
+        
 
     print("Collected T&P updates!")
     print("Logging out.")
