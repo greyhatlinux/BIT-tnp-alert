@@ -5,12 +5,12 @@
 2. [Why is this?](#why-is-this)
 3. [Is it a need or want?](#Is-it-a-need-or-want?)
 4. [What is the inspiration behind?](#What-is-the-inspiration-behind?)
-5. [Workflow Overview](#Workflow-Overview)
+5. [System Setup](#System-Setup)
 6. [How to install and run](#How-to-install-and-run?)
 7. [Changes to be made from your end](#Changes-to-be-made-at-your-end)
 8. [Technical Details](#Technical-Details)
-9. [My proposal](#My-proposal)
-10. [Cost Concern](#Cost-Concern)
+9. [Cost Concern](#Cost-Concern)[
+10. [My proposal](#My-proposal)
 11. [Contact](#Contact)
 
 ## What is this?
@@ -31,7 +31,7 @@ Well, the inspiration is often great about projects, but this time it's not.
 These incidents really broke my heart. I wanted to device a solution for this, so that no one in future face these unstandable situations.
 
 
-## Workflow Overview
+## System Setup
 
 ![setup-diagram](./img/tnp-setup.png)
 
@@ -113,6 +113,7 @@ Alternatives :
 - SpringEdge 
 
 
+
 ## Cost Concern
 
 Considering :
@@ -135,6 +136,12 @@ Subscription Charges :
 <br><br>
 
 > As I mentioned before, twilio can be very costly for sms broadcast, as well as emailing. One can easily look for other alternatives.
+
+## My Proposal 
+
+I assure that the setup can be very efficient, and economical for small friend circles, almost at no cost at all, if utilised tactfully. Using the AWS first-year benifits (750 hour of Ec2 per month), along with Twilio Sendgrid's incentive (free 100 mails/day forver), the setup comes at no cost for the first year. 
+
+I encourage small college groups to setup the system for themselves for free atleast for the first year, and even later the cost will be negligible per-head.
 
 
 ## Contact 
