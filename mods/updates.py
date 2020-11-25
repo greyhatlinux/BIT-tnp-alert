@@ -3,22 +3,26 @@ import bs4
 
 def check_updates():
     with open('source.txt' , 'r') as f:
-        data = f.read()
+      data = f.read()
 
-    os.remove('source.txt')
-    
     soup = bs4.BeautifulSoup(data, 'html.parser')
 
-    raw = set(soup.select('#divAnnouncement_d'))
-    for i in raw:
-        ann = i.text
-    new_all = ann.split('\xa0')
-    
-    with open('announcement.txt' , 'r+') as f:
-        prev_all = f.read()
-        prev = prev_all.split('\n')
-        for i in new_all:
-            if ( i not in prev_all):
-                f.write(i + "\n")
-                with open('new-update.txt', 'a+') as recent:
-                    recent.write(i + "\n")
+    all_ann = soup.select('#tbodydetail #trjafrequest #subject')
+
+    with open ("new-ann.txt", 'a+') as f:   
+        for ann in all_ann:
+            f.write(ann.text + '\n')
+
+
+def check_jobs():
+
+    with open('job-source.txt', 'r') as f:
+        data = f.read()
+
+    soup = bs4.BeautifulSoup(data, 'html.parser')
+
+    all_comp = soup.select('#data-table-hrteam #Joblist #trlist #name')
+
+    with open ("new-companies.txt", 'a+') as f:   
+        for comp in all_comp:
+            f.write(comp.text + '\n')
