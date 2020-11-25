@@ -23,8 +23,17 @@ if __name__ == "__main__":
 
     print("Emailing the new updates, if any")
     notify.email()
-    with open('new-update.txt', 'w') as file: pass
+
+
+    with open('source.txt', 'w') as file: pass
+    os.remove('ann.txt')
+    os.rename(r'new-ann.txt', r'ann.txt')
+
+    with open('job-source.txt', 'w') as file: pass
+    os.remove('companies.txt')
+    os.rename(r'new-companies.txt', r'companies.txt')
+
+
     print("Done!")
-    print("We'll scan in next 10 minutes!")
 
 
