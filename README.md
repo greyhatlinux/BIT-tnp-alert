@@ -9,7 +9,7 @@
 6. [How to install and run](#How-to-install-and-run?)
 7. [Changes to be made from your end](#Changes-to-be-made-at-your-end)
 8. [Technical Details](#Technical-Details)
-9. [Cost Concern](#Cost-Concern)[
+9. [Cost Concern](#Cost-Concern)
 10. [My proposal](#My-proposal)
 11. [Contact](#Contact)
 
