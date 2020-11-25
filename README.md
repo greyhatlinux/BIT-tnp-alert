@@ -143,7 +143,6 @@ I assure that the setup can be very efficient, and economical for small friend c
 
 I encourage small college groups to setup the system for themselves for free atleast for the first year, and even later the cost will be negligible per-head.
 
-
-## Contact 
-vishalgorai09@gmail.com
+## Contribution
+The project is open for contributions from BIT students (since this caters specifically to them), for feature enhancement or bug fixes (if any). Feel free to open issues, or send your PR on this. 
 
