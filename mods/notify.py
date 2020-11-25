@@ -5,6 +5,8 @@ import requests
 
 
 mem = ['abc@gmail.com', 'def@gmail.com']
+
+
 def email():
     print("Looking for Notifications")
 
