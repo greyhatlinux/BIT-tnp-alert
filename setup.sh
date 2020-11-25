@@ -29,6 +29,9 @@ sudo pip3 install -r requirements.txt
 
 sudo pip3 install bs4  > /dev/null/ 2>&1
 
+pip3 install sendgrid
+pip install bs4
+
 clear 
 echo -e "Almost Done!" 
 sudo apt install firefox -y > /dev/null 2>&1
